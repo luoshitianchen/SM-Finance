@@ -1,0 +1,16 @@
+[project]
+name = "SM-Finance"
+version = "2.0.0"
+description = "财务核算系统：科目、总账分录、应收应付、发票与报表"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 200
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
