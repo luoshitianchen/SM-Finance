@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field
 from app import base
 
 SERVICE = "sm-finance"
-VERSION = "2.0.0"
+VERSION = "3.0.0"
 NAME = "SM Finance"
 DESCRIPTION = "财务管理：总账科目、凭证、发票、预算与财务报表"
 PORT = 8520
