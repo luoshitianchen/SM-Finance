@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sm-finance
+  namespace: sm
+  labels:
+    app: sm-finance
+    platform: sm-suite
+spec:
+  type: ClusterIP
+  selector:
+    app: sm-finance
+  ports:
+  - name: http
+    port: 8520
+    targetPort: http
+    protocol: TCP
